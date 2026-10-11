@@ -21,7 +21,6 @@ jobs:
       - name: Set up Android SDK
         uses: android-actions/setup-android@v4
         with:
-          cmdline-tools-version: '11479570' # Corresponds to version 13.0 or leave blank to use the modern default
           packages: |
             platform-tools
             platforms;android-35
