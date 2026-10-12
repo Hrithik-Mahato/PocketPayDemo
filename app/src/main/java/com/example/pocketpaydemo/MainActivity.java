@@ -54,7 +54,7 @@ public class MainActivity extends Activity {
         top.addView(badge);
         page.addView(top);
 
-        TextView greeting = text("Hello there 👋", 16, muted, false);
+        TextView greeting = text("Hello there, Mr. Hrithik Mahato 👋", 16, muted, false);
         LinearLayout.LayoutParams gp = params(-1, -2);
         gp.topMargin = dp(20);
         page.addView(greeting, gp);
@@ -66,12 +66,12 @@ public class MainActivity extends Activity {
         LinearLayout.LayoutParams cp = params(-1, -2);
         cp.topMargin = dp(12);
         page.addView(card, cp);
-        card.addView(text("DEMO WALLET BALANCE", 12, Color.rgb(222, 235, 255), true));
-        balance = text("₹2,450.00", 32, Color.WHITE, true);
+        card.addView(text("YOUR WALLET BALANCE", 12, Color.rgb(222, 235, 255), true));
+        balance = text("₹10,000.00", 32, Color.WHITE, true);
         LinearLayout.LayoutParams bp = params(-1, -2);
         bp.topMargin = dp(8);
         card.addView(balance, bp);
-        TextView disclaimer = text("This is sample money, not a bank balance.", 12, Color.WHITE, false);
+        TextView disclaimer = text("Ye tere baap ka paise nahi hai!", 12, Color.WHITE, false);
         LinearLayout.LayoutParams dp = params(-1, -2);
         dp.topMargin = dp(7);
         card.addView(disclaimer, dp);
@@ -106,7 +106,7 @@ public class MainActivity extends Activity {
         ap.topMargin = dp(16);
         page.addView(actions, ap);
 
-        TextView safety = text("Practice mode • No real payments • No bank connection", 12, muted, false);
+        TextView safety = text("Sawdan Rahe • Satark Rahe • Jinda Rahe", 12, muted, false);
         safety.setGravity(Gravity.CENTER);
         LinearLayout.LayoutParams sp = params(-1, -2);
         sp.topMargin = dp(20);
@@ -149,7 +149,7 @@ public class MainActivity extends Activity {
         form.addView(person);
         form.addView(amount);
         new AlertDialog.Builder(this)
-            .setTitle(action == 0 ? "Send demo money" : "Request demo money")
+            .setTitle(action == 0 ? "Send demo money Hrithik" : "Request demo money")
             .setView(form)
             .setNegativeButton("Cancel", null)
             .setPositiveButton(action == 0 ? "Simulate payment" : "Create request", (dialog, which) -> {
